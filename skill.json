@@ -1,0 +1,36 @@
+{
+  "name": "genpark-autonomous-browser-action-planner-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Autonomous web browser execution planner mapping natural language objectives into resilient selector action sequences.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "browser-automation",
+  "tags": [
+    "autopilot",
+    "browser-agent",
+    "action-planner",
+    "computer-use",
+    "web-automation"
+  ],
+  "inputs": {
+    "goal": {
+      "type": "string"
+    },
+    "elements": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "action_plan_id": {
+      "type": "string"
+    },
+    "total_actions": {
+      "type": "integer"
+    },
+    "action_sequence": {
+      "type": "array"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
